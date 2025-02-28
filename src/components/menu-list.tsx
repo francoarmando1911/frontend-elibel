@@ -79,31 +79,31 @@ export default MenuList
 
 const components: { title: string; href: string; description: string }[] = [
     {
-        title: "Kids",
-        href: "/category/nacimientos",
+        title: "Nacimientos",
+        href: "/categories/nacimientos",
         description:
             "De 0 a 18 meses - De 1 a 4 años",
     },
     {
-        title: "Junior Boys",
-        href: "/category/ninas",
+        title: "Niños",
+        href: "/categories/ninas",
         description:
             "De 4 a +12 años",
     },
     {
-        title: "Junior Girls",
-        href: "/category/ninos",
+        title: "Niñas",
+        href: "/categories/ninos",
         description:
             "De 4 a +12 años",
     },
     {
         title: "Accesorios",
-        href: "/category/accesorios",
+        href: "/categories/accesorios",
         description: "Los mejores accesorios para complementar el outfit perfecto.",
     },
     {
         title: "Calzado",
-        href: "/category/calzado",
+        href: "/categories/calzado",
         description:
             "El mejor calzado para los mas peques",
     },

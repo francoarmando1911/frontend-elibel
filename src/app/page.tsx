@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <main>
-      <Button>Click here</Button>
+      <h2>prueba</h2>
     </main>
   );
 }
