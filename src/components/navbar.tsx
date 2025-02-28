@@ -6,13 +6,13 @@ import Image from "next/image";
 import MenuList from "./menu-list";
 import { useRouter } from "next/navigation";
 import ItemsMenuMobile from "./items-menu-mobile";
+import ToggleTheme from "./toggle-theme";
 
 const Navbar = () => {
   const router = useRouter();
 
   return (
     <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max-w-4xl md:max-w-6xl">
-      {/* Logo con Link */}
       <Link href="/">
         <Image
           src="/logo1.png"  
@@ -33,6 +33,7 @@ const Navbar = () => {
         <ShoppingCart strokeWidth="1" className="cursor-pointer" onClick={() => router.push("/cart")} />
         <Heart strokeWidth="1" className="cursor-pointer" onClick={() => router.push("/loved-products")} />
         <User strokeWidth="1" className="cursor-pointer" />
+        <ToggleTheme/>
       </div>
     </div>
   );

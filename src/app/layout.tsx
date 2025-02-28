@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -11,27 +12,29 @@ const urbanist = Urbanist({
 export const metadata: Metadata = {
   title: "Elibel ecommerce",
   description: "Elibel ecommerce",
-
   icons: {
-    icon: '/verde.png',
-    apple: '/verde.png',
+    icon: "/icono.png",
+    apple: "/icono.png",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${urbanist.className}`}
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
       >
-        <Navbar/>
-        {children}
-        <Footer/>
-      </body>
+        <body className={urbanist.className}>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
