@@ -13,7 +13,7 @@ const Footer = () => {
         <footer className="mt-4 bg-gradient-to-r from-blue-50 to-indigo-50">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="flex flex-col sm:flex-row sm:justify-between items-center">
-                    <p className="font-bold">Elibel <span className="font-normal">E-commerce</span></p>
+                    <p className="font-bold dark:text-gray-400">Elibel <span className="font-normal dark:text-gray-400">E-commerce</span></p>
 
                     <ul className="flex flex-wrap justify-center sm:justify-start items-center mb-6 text-sm font-medium text-gray-500 dark:text-gray-400">
                         {dataFooter.map((data) => (
