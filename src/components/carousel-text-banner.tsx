@@ -27,7 +27,7 @@ export const dataCarrouselTop = [
     {
         id: 4,
         title: "Atención personalizada",
-        description: "Nuestro equipo de soporte está disponible para ayudarte con cualquier consulta.",
+        description: "Estamos disponibles para ayudarte con cualquier consulta.",
         link: "#"
     }
 ];

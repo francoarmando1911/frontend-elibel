@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max-w-4xl md:max-w-6xl">
       <Link href="/">
         <Image
-          src="/logo1.png"  
+          src="/logo2.png"  
           alt="Logo de Elibel"
           width={120}
           height={40}

@@ -25,8 +25,8 @@ const Footer = () => {
                 </div>
                 <Separator className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
-                <span className="block text-sm text-gray-500 text-center sm:text-left dark:text-gray-400">
-                    &copy; 2025 Intra Software. <Link href="#" className="hover:underline">Intra Software</Link>. Todos los derechos reservados.
+                <span className="block text-sm text-gray-600 text-center sm:text-left dark:text-gray-500">
+                    &copy; 2025 Intra Software <Link href="https://intra-software-next.vercel.app/" className="hover:underline"></Link>. Todos los derechos reservados.
                 </span>
             </div>
         </footer>
