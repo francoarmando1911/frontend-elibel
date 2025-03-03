@@ -25,14 +25,14 @@ const ToggleTheme = () => {
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setTheme("claro")}>
-                    Light
+                <DropdownMenuItem onClick={() => setTheme("ligth")}>
+                    Claro
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("obscuro")}>
-                    Dark
+                <DropdownMenuItem onClick={() => setTheme("dark")}>
+                    Obscuro
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("sistema")}>
-                    System
+                <DropdownMenuItem onClick={() => setTheme("system")}>
+                    Sistema
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
