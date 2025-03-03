@@ -29,6 +29,6 @@ Se implementaron estrategias para mejorar la visibilidad y velocidad de la tiend
 ## Repositorio del Backend
 
 El backend de este proyecto está desarrollado con Strapi y se encuentra disponible en el siguiente enlace:
-"Repositorio del Backend"
+Repositorio del Backend
 
 
