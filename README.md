@@ -26,5 +26,9 @@ Se implementaron estrategias para mejorar la visibilidad y velocidad de la tiend
 - **Despliegue en Vercel**: Se utilizó Vercel para el hosting del proyecto, asegurando un despliegue rápido y escalable.
 - **Mantenimiento**: Se establecieron estrategias para la gestión y actualización de productos y precios a través de Strapi.
 
+## Repositorio del Backend
+
+El backend de este proyecto está desarrollado con Strapi y se encuentra disponible en el siguiente enlace:
+Repositorio del Backend
 
 
