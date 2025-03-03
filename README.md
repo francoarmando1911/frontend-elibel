@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend para eCommerce Elibel con Next.js 14 y ShadCN
 
-## Getting Started
+Este proyecto utiliza Next.js 14 como frontend para la tienda eCommerce, proporcionando una experiencia rápida, optimizada para SEO y visualmente atractiva con ShadCN.
 
-First, run the development server:
+## Desarrollo de la Tienda con Next.js 14
+Se utilizó Next.js 14 para construir un frontend dinámico, aprovechando características como:
+- **SSG (Static Site Generation)**: Para pre-renderizar páginas estáticas y mejorar la velocidad de carga.
+- **SSR (Server-Side Rendering)**: Para generar contenido dinámico en tiempo real.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Diseño con ShadCN
+Se empleó ShadCN para la estilización del frontend, utilizando sus componentes prediseñados para una interfaz moderna y coherente. Esto permitió un desarrollo rápido y eficiente, asegurando una experiencia de usuario intuitiva.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Páginas Principales
+Se desarrollaron las siguientes páginas clave:
+- **Página de Inicio**: Presentación atractiva con productos destacados y promociones.
+- **Catálogo de Productos**: Vista de productos con filtros, categorías y opciones de búsqueda.
+- **Detalles del Producto**: Página dedicada con información detallada, imágenes y botón de "Añadir al carrito".
+- **Carrito de Compras**: Sección para que los usuarios puedan ver y modificar productos antes de proceder al pago.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Optimización para SEO y Rendimiento
+Se implementaron estrategias para mejorar la visibilidad y velocidad de la tienda:
+- **SEO**: Configuración de metaetiquetas, optimización de URLs y uso de herramientas de Next.js para mejorar la indexación en buscadores.
+- **Rendimiento**: Aplicación de técnicas como Lazy Loading y Code Splitting para mejorar la experiencia de navegación.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Despliegue de la Tienda
+- **Despliegue en Vercel**: Se utilizó Vercel para el hosting del proyecto, asegurando un despliegue rápido y escalable.
+- **Mantenimiento**: Se establecieron estrategias para la gestión y actualización de productos y precios a través de Strapi.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
