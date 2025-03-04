@@ -3,7 +3,7 @@
 import { useGetFeaturedProducts } from "@/api/useGetFeaturedProducts";
 import { ResponseType } from "@/types/response";
 import { ProductType } from "@/types/product";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import SkeletonSchema from "./skeletonScheme";
 import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
@@ -26,11 +26,16 @@ const FeaturedProducts = () => {
                     {result?.length ? (
                         result.map((product: ProductType) => {
                             const { attributes, id } = product;
-                            const { slug, image, productName } = attributes || {};
+                            const { slug, images, productName } = attributes || {};
 
-                            const imageUrl = image?.data?.[0]?.attributes?.url
-                                ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${image.data[0].attributes.url}`
+                            console.log("Producto:", product);
+                            console.log("Imagen:", images);
+
+                            const imageUrl = images?.data?.[0]?.attributes?.url
+                                ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${images.data[0].attributes.url}`
                                 : "/icono.png";
+
+                            console.log("Image URL:", imageUrl);
 
                             return (
                                 <CarouselItem key={id} className="md:basis-1/2 lg:basis-1/3 group">
@@ -63,7 +68,7 @@ const FeaturedProducts = () => {
                                             </CardContent>
                                             {/* Nombre del producto */}
                                             <div className="flex justify-between gap-4 px-8 mt-2">
-                                                <h3 className="text-lg font-semibold">{productName || "Producto sin nombre"}</h3>
+                                                <h3 className="text-lg font-bold">{productName || "Producto sin nombre"}</h3>
                                             </div>
                                         </Card>
                                     </div>
@@ -74,6 +79,8 @@ const FeaturedProducts = () => {
                         !loading && <p className="px-6 py-4">No hay productos destacados.</p>
                     )}
                 </CarouselContent>
+                <CarouselPrevious/>
+                <CarouselNext className="hidden sm:flex"/>
             </Carousel>
         </div>
     );

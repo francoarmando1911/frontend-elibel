@@ -7,7 +7,7 @@ export type ProductType = {
         active: boolean;
         isFeatured: boolean;
         price: number;
-        image: {
+        images: {
             data: {
                 id: number
                 attributes: {
