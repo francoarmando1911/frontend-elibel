@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 const FeaturedProducts = () => {
     const { loading, result }: ResponseType<ProductType[]> = useGetFeaturedProducts();
     const router = useRouter();
+    console.log(result)
 
     return (
         <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
